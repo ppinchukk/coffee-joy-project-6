@@ -1,10 +1,11 @@
 .header-container {
   display: flex;
-  padding: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  align-items: center;
 }
 
 .header-logo {
-  padding: 18px 0 18px 16px;
   display: block;
 }
 
