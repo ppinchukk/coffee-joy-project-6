@@ -9,6 +9,10 @@
   display: block;
 }
 
+.logo-icon {
+  display: block;
+}
+
 .icon-menu {
   display: flex;
   align-items: center;
@@ -18,10 +22,12 @@
 .nav-list {
   display: none;
 }
+
 @media screen and (min-width: 768px) {
   .icon-menu {
     display: none;
   }
+
   .nav-list {
     display: flex;
     align-items: center;
