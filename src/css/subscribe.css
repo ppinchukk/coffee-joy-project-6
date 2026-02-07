@@ -8,6 +8,7 @@
 .subscription-info {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 32px;
 }
 
@@ -33,9 +34,19 @@
 
 .subscribe-form-wrapper {
   display: flex;
+  position: relative;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
   margin-bottom: 16px;
+}
+
+.subscribe-email-label {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 12px;
+  color: #7f1c1c;
 }
 
 .subscribe-input {
@@ -71,6 +82,7 @@
 
 .subscription-media img {
   border-radius: 40px;
+  width: 100%;
 }
 
 .subscribe-btn {
@@ -115,12 +127,19 @@
 
 .subscribe-policy {
   font-size: 12px;
+  text-align: start;
+  max-width: 288px;
 }
 
 @media screen and (min-width: 768px) {
   .subscription-main {
     align-items: flex-start;
   }
+
+  .subscription-info {
+    align-items: start;
+  }
+
   .subscription-media {
     max-width: 704px;
   }
@@ -146,6 +165,10 @@
     width: 158px;
     height: 44px;
   }
+
+  .subscribe-policy {
+    max-width: 522px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -164,5 +187,9 @@
   .subscription-title {
     font-size: 48px;
     max-width: 640px;
+  }
+
+  .subscribe-policy {
+    max-width: 513px;
   }
 }
