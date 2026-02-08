@@ -1,0 +1,140 @@
+.location-container {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.location-heading {
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 16px;
+}
+
+.location-title {
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  padding-bottom: 24px;
+}
+
+.location-text {
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.contacts {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.icon {
+  padding-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* gap: 16px; */
+}
+
+.contacts-title {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.contacts-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.contacts-text {
+  min-width: 288px;
+  padding-bottom: 16px;
+}
+
+.location-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  border-radius: 100px;
+  width: 138px;
+  height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0b0803;
+  margin-bottom: 32px;
+}
+
+.map-container iframe {
+  border-radius: 40px;
+  width: 100%;
+  min-height: 307px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+
+  .contacts-item {
+    width: calc((100% - 80px) / 3);
+  }
+
+  .map-container iframe {
+    /* width: 704px; */
+    height: 377px;
+    width: 100%;
+  }
+
+  .contacts-text {
+    min-width: 208px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    margin: 0 auto;
+  }
+  .location-contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .location-container {
+    padding: 0;
+  }
+  .location_title {
+    font-size: 48px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .all {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 24px;
+  }
+
+  .contacts-item {
+    width: 419px;
+  }
+
+  .map-container iframe {
+    width: 869px;
+    height: 697px;
+    flex-shrink: 0;
+  }
+}
