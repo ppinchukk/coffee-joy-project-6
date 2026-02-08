@@ -1,37 +1,24 @@
-.location {
-  padding-top: 64px;
-}
-
 .location-container {
   display: flex;
   flex-direction: column;
   font-style: normal;
 }
 
-.location_heading {
+.location-heading {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #0b0803;
   text-align: left;
   padding-bottom: 16px;
 }
 
-.location_title {
-  font-family: 'Aboreto', sans-serif;
-  font-weight: 400;
+.location-title {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  color: #0b0803;
   padding-bottom: 24px;
 }
 
-.location_text {
-  font-weight: 400;
+.location-text {
   font-size: 18px;
-  line-height: 1.5;
-  color: #0b0803;
   padding-bottom: 40px;
 }
 
@@ -52,21 +39,16 @@
 }
 
 .contacts-title {
-  font-weight: 400;
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: -0.01em;
-  color: #0b0803;
   padding-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .contacts-link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #0b0803;
 }
 
 .contacts-text {
@@ -92,8 +74,8 @@
 
 .map-container iframe {
   border-radius: 40px;
-
-  height: 307px;
+  width: 100%;
+  min-height: 307px;
 }
 
 @media screen and (min-width: 768px) {
@@ -109,10 +91,9 @@
   }
 
   .map-container iframe {
-    /* border-radius: 40px; */
-    width: 704px;
+    /* width: 704px; */
     height: 377px;
-    /* margin: 0 auto; */
+    width: 100%;
   }
 
   .contacts-text {
@@ -121,8 +102,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .location {
-    padding: 0 64px;
+  .section {
     margin: 0 auto;
   }
   .location-contacts {
@@ -142,16 +122,19 @@
     display: flex;
     flex-direction: column;
   }
+  .all {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 24px;
+  }
 
   .contacts-item {
     width: 419px;
   }
 
   .map-container iframe {
-    border-radius: 40px;
-    max-width: 869px;
     width: 869px;
     height: 697px;
-    padding: 0;
+    flex-shrink: 0;
   }
 }
