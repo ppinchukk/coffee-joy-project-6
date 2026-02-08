@@ -1,0 +1,157 @@
+.location {
+  padding-top: 64px;
+}
+
+.location-container {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.location_heading {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0b0803;
+  text-align: left;
+  padding-bottom: 16px;
+}
+
+.location_title {
+  font-family: 'Aboreto', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #0b0803;
+  padding-bottom: 24px;
+}
+
+.location_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #0b0803;
+  padding-bottom: 40px;
+}
+
+.contacts {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.icon {
+  padding-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* gap: 16px; */
+}
+
+.contacts-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: #0b0803;
+  padding-bottom: 8px;
+}
+
+.contacts-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #0b0803;
+}
+
+.contacts-text {
+  min-width: 288px;
+  padding-bottom: 16px;
+}
+
+.location-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  border-radius: 100px;
+  width: 138px;
+  height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0b0803;
+  margin-bottom: 32px;
+}
+
+.map-container iframe {
+  border-radius: 40px;
+
+  height: 307px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+
+  .contacts-item {
+    width: calc((100% - 80px) / 3);
+  }
+
+  .map-container iframe {
+    /* border-radius: 40px; */
+    width: 704px;
+    height: 377px;
+    /* margin: 0 auto; */
+  }
+
+  .contacts-text {
+    min-width: 208px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .location {
+    padding: 0 64px;
+    margin: 0 auto;
+  }
+  .location-contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .location-container {
+    padding: 0;
+  }
+  .location_title {
+    font-size: 48px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-item {
+    width: 419px;
+  }
+
+  .map-container iframe {
+    border-radius: 40px;
+    max-width: 869px;
+    width: 869px;
+    height: 697px;
+    padding: 0;
+  }
+}
