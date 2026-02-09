@@ -7,19 +7,19 @@
 .location-heading {
   font-weight: 600;
   text-align: left;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .location-title {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .location-text {
   font-size: 18px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .contacts {
@@ -30,19 +30,18 @@
 }
 
 .icon {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  /* gap: 16px; */
 }
 
 .contacts-title {
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: -0.01em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   text-transform: uppercase;
 }
 
@@ -53,7 +52,7 @@
 
 .contacts-text {
   min-width: 288px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .location-button {
@@ -124,7 +123,6 @@
   }
   .all {
     display: flex;
-    /* flex-direction: row; */
     gap: 24px;
   }
 
@@ -136,5 +134,9 @@
     width: 869px;
     height: 697px;
     flex-shrink: 0;
+  }
+
+  .location-button {
+    margin-bottom: 0;
   }
 }
