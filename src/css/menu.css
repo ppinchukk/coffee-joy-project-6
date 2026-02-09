@@ -18,9 +18,12 @@
 .mobile-menu-header {
   display: flex;
   align-items: center;
+}
 
+.mobile-menu-container {
   height: 100%;
-  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-logo-mobile {
