@@ -1,5 +1,5 @@
 .section-subtitle {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   font-weight: 600;
 }
 
@@ -16,6 +16,10 @@
   margin-bottom: 32px;
 }
 
+.welcome-wrapper {
+  margin-bottom: 32px;
+}
+
 .welcome-btn {
   border-radius: 100px;
   display: flex;
@@ -28,7 +32,7 @@
   gap: 12px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 
   box-shadow:
     0 1px 2px 0 rgba(11, 8, 3, 0.05),
@@ -57,7 +61,7 @@
   display: block;
   align-items: center;
   margin: 0 auto;
-  max-width: 288px;
+  max-width: 100%;
 }
 
 .welcome-wrapper {
@@ -72,9 +76,6 @@
     width: 336px;
   }
 
-  .welcome-text {
-  }
-
   .welcome-btn {
     width: 181px;
     margin-left: 0;
@@ -84,6 +85,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width:;
   }
 
   .welcome-wrapper {
@@ -103,5 +105,9 @@
 
   .img-welcome {
     max-width: 1312px;
+  }
+
+  .welcome-wrapper {
+    margin-bottom: 80px;
   }
 }
