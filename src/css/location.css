@@ -105,6 +105,7 @@
   .section {
     margin: 0 auto;
   }
+
   .location-contacts {
     display: flex;
     flex-direction: row;
@@ -114,7 +115,8 @@
   .location-container {
     padding: 0;
   }
-  .location_title {
+
+  .location-title {
     font-size: 48px;
   }
 
@@ -122,6 +124,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .all {
     display: flex;
     gap: 24px;
